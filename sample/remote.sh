@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#Author: Israel Magbag
-#Date: December 25, 2019
-#Description: Monitor multiple server's status via ICMP
+# Author: Israel Magbag
+# Date: December 25, 2019
+# Description: Monitor multiple server's status via ICMP
 
 hosts="/workspace/bash/sample/file.txt"
 
