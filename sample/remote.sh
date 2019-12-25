@@ -9,7 +9,6 @@ hosts="/workspace/bash/sample/file.txt"
 for ip in $(cat $hosts)
 
 do 
-
     ping -c1 $ip &> /dev/null
     if [ $? -eq 0 ]
     then
