@@ -13,8 +13,8 @@ do
     ping -c1 $ip &> /dev/null
     if [ $? -eq 0 ]
     then
-    echo $ip "is OK"
+    echo $ip "is ACTIVE"
     else
-    echo $ip "is NOT OK"
+    echo $ip "is NOT ACTIVE"
     fi
 done
