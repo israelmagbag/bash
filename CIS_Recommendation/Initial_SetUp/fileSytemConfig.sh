@@ -62,5 +62,3 @@ else
 	echo -e "\n# Disable per security requirements" >> /etc/modprobe.d/udf.conf
 	echo "install udf /bin/true" >> /etc/modprobe.d/udf.conf
 fi
-
-sleep(1)
