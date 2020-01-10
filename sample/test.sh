@@ -1,8 +1,8 @@
 #!/bin/bash
 
-files="/workspace/bash/sample/f.txt"
+files=("ayan" "grace" "ako")
 
-for fname in $(cat $files)
+for fname in ${files[*]}
 
 do
     touch /workspace/bash/sample/$fname.txt

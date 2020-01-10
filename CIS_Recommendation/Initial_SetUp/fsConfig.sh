@@ -2,9 +2,9 @@
 # Author: Israel Magbag
 # Date: January 09, 2020
 
-list="/workspace/bash/CIS_Recommendation/Initial_SetUp/fsConfigList.txt"
+list=("cramfs" "freevxfs" "jffs2" "hfs" "hfsplus" "squashfs" "udf" "vfat")
 
-for item in $(cat $list)
+for item in ${list[*]}
 
 do
     if LC_ALL=C grep -q -m 1 "^install $item" /etc/modprobe.d/$item.conf ; then
