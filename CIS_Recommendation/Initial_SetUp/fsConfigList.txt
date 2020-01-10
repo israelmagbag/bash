@@ -6,3 +6,5 @@ hfsplus
 squashfs
 udf
 vfat
+dccp
+sctp
