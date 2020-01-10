@@ -2,7 +2,7 @@
 # Author: Israel Magbag
 # Date: January 09, 2020
 
-list=("cramfs" "freevxfs" "jffs2" "hfs" "hfsplus" "squashfs" "udf" "vfat")
+list=("cramfs" "freevxfs" "jffs2" "hfs" "hfsplus" "squashfs" "udf" "vfat" "dccp" "sctp")
 
 for item in ${list[*]}
 
