@@ -4,7 +4,7 @@
 
 list=( "xinetd" "avahi-daemon" "cups" "dhcpd" "slapd" "nfs" "nfs-server" "rpcbind" "named" "vsftpd" "httpd" "dovecot" "smb" "squid" "snmpd" "ypserv" "rsh.socket" "rlogin.socket" "rexec.socket" "ntalk" "telnet.socket" "tftp.socket" "rsyncd")
 data=("ypbind" "rsh" "talk" "telnet" "openldap-clients")
-srv=("chargen-dgram" "chargen-stream" "daytime-dgram" "daytime-stream" "discard-dgram" "discard-stream" "echo-dgram" "echo-stream" "time-dgram" "time-stream" "tftp")
+srv=("chargen-dgram" "chargen-stream" "daytime-dgram" "daytime-stream" "discard-dgram" "discard-stream" "echo-dgram" "echo-stream" "time-dgram" "time-stream" "tftp" "rhnsd")
 
 for item in ${list[*]}
 
