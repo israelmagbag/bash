@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author: Israel Magbag
-# Date: January 09, 2020
+# Date: January 10, 2020
 
 function include_mount_options_functions {
 	:
