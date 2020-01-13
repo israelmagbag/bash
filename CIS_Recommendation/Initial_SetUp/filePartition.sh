@@ -75,6 +75,43 @@ function perform_remediation {
 	ensure_mount_option_in_fstab "/tmp" "nodev"
 
 	ensure_partition_is_mounted "/tmp"
+
+    ensure_mount_option_in_fstab "/tmp" "nosuid"
+
+	ensure_partition_is_mounted "/tmp"
+
+    ensure_mount_option_in_fstab "/tmp" "noexec"
+
+	ensure_partition_is_mounted "/tmp"
+
+    ensure_mount_option_in_fstab "/var/tmp" "nodev"
+
+	ensure_partition_is_mounted "/var/tmp"
+
+    ensure_mount_option_in_fstab "/var/tmp" "nosuid"
+
+	ensure_partition_is_mounted "/var/tmp"
+
+    ensure_mount_option_in_fstab "/var/tmp" "noexec"
+
+	ensure_partition_is_mounted "/var/tmp"
+
+    ensure_mount_option_in_fstab "/home" "nodev"
+
+	ensure_partition_is_mounted "/home"
+
+    ensure_mount_option_in_fstab "/dev/shm" "nodev"
+
+	ensure_partition_is_mounted "/dev/shm"
+
+    ensure_mount_option_in_fstab "/dev/shm" "nosuid"
+
+	ensure_partition_is_mounted "/dev/shm"
+
+    ensure_mount_option_in_fstab "/dev/shm" "noexec"
+
+	ensure_partition_is_mounted "/dev/shm"
+    
 }
 
 perform_remediation
