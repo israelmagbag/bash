@@ -19,11 +19,14 @@ do
     chown root:root $i
 done
 
+files=("/etc/shadow" "/etc/gshadow" "/etc/shadow-" "/etc/gshadow-")
+
+for f in ${files[*]}
+do
+   chmod 000 $f 
+done
+
 chmod 644 /etc/passwd
-chmod 000 /etc/shadow
 chmod 644 /etc/group
-chmod 000 /etc/gshadow
 chmod u-x,go-wx /etc/passwd-
-chmod 000 /etc/shadow-
 chmod u-x,go-wx /etc/group-
-chmod 000 /etc/gshadow-
