@@ -4,8 +4,6 @@
 
 list=("/etc/crontab" "/etc/cron.hourly" "/etc/cron.daily" "/etc/cron.weekly" "/etc/cron.monthly" "/etc/cron.d" "/etc/ssh/sshd_config")
 
-chmod 0600 /boot/grub2/grub.cfg
-
 for item in ${list[*]}
 do
     chown root:root $item
@@ -26,6 +24,7 @@ do
    chmod 000 $f 
 done
 
+chmod 0600 /boot/grub2/grub.cfg
 chmod 644 /etc/passwd
 chmod 644 /etc/group
 chmod u-x,go-wx /etc/passwd-
