@@ -33,3 +33,4 @@ fi
 
 package_remove telnet
 package_remove xorg-x11-server-common
+package_remove setroubleshoot
