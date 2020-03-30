@@ -8,8 +8,8 @@ SYSTEMCTL_EXEC='/usr/bin/systemctl'
 for item in ${data[*]}
 
 do
-    "$SYSTEMCTL_EXEC" stop '$item.service'
-    "$SYSTEMCTL_EXEC" disable '$item.service'
-    "$SYSTEMCTL_EXEC" list-unit-files | grep -q '^$item.socket\>' && "$SYSTEMCTL_EXEC" disable '$item.socket'
-    "$SYSTEMCTL_EXEC" reset-failed '$item.service'
+    "$SYSTEMCTL_EXEC" stop $item +'.service'
+    "$SYSTEMCTL_EXEC" disable $item +'.service'
+    "$SYSTEMCTL_EXEC" list-unit-files | grep -q '^'+$item+'.socket\>' && "$SYSTEMCTL_EXEC" disable $item+'.socket'
+    "$SYSTEMCTL_EXEC" reset-failed $item+'.service'
 done
